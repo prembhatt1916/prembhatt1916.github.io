@@ -23,10 +23,44 @@
     }
 
   </script>
- 
+
 </head>
 
 <body>
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat Plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat Plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "112225937917934");
+    chatbox.setAttribute("attribution", "biz_inbox");
+
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v12.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <div class="page">
     <div class="main">
       <div class="header js-header">
@@ -89,7 +123,8 @@
             <div class="head__stage stage" data-aos="animation-translate-right"><span class="stage__number">01.</span>
               Who Am I<div class="stage__logo"><img class="stage__pic" src="img/logo-sm.png" alt=""></div>
             </div>
-            <h2 class="head__title h2" data-aos="animation-scale-y" data-aos-delay="200">A Developer with Marketing background</h2>
+            <h2 class="head__title h2" data-aos="animation-scale-y" data-aos-delay="200">A Developer with Marketing
+              background</h2>
           </div>
           <div class="head__arrows arrows arrows_white" data-aos="animation-scale-y" data-aos-delay="400">
             <button class="arrows__prev js-prev">
@@ -112,7 +147,8 @@
         </div>
         <div class="details__body">
           <div class="details__years aos-init aos-animate" data-aos="animation-translate-right">
-            <div class="details__year js-details-year"><div class="details__line">
+            <div class="details__year js-details-year">
+              <div class="details__line">
                 <div class="details__dot"></div>
               </div>
             </div>
@@ -159,7 +195,10 @@
           <div class="details__wrap">
             <h5 class="details__info h5" data-aos="animation-scale-y">Constantly moving ready to experiment new things
             </h5>
-            <div class="details__text" data-aos="animation-scale-y" data-aos-delay="200">My Name is Prem Bhatt. & I'm a Twenty-One-Years-Old Full Stack Developer and Digital Marketing Enthusiast based in India (but Working worldwide). I'm available for Projects, Collabrations and Experiments. The most important thing for me in my
+            <div class="details__text" data-aos="animation-scale-y" data-aos-delay="200">My Name is Prem Bhatt. & I'm a
+              Twenty-One-Years-Old Full Stack Developer and Digital Marketing Enthusiast based in India (but Working
+              worldwide). I'm available for Projects, Collabrations and Experiments. The most important thing for me in
+              my
               work is to understand the client’s tasks, and offer the most relevant solution.</div>
             <div class="details__btn" data-aos="animation-scale-y" data-aos-delay="400"><button
                 class="btn btn_primary">Reach Out</button></div>
@@ -254,7 +293,7 @@
                     <h6 class="work__category h6">Chatbot Setup</h6>
                   </div>
                 </div>
-                
+
                 <div class="work__slide">
                   <div class="work__item">
                     <div class="work__preview"><img class="work__pic" src="img/work-pic-3.png" alt=""></div>
@@ -307,7 +346,8 @@
                   class="stage__number">03.</span> Achievement</span>
               <div class="stage__logo"><img class="stage__pic" src="img/logo-sm.png" alt=""></div>
             </div>
-            <h5 class="achievement__title h5" data-aos="animation-scale-y" data-aos-delay="200">I don’t just sell websites, I create websites that SELL.</h5>
+            <h5 class="achievement__title h5" data-aos="animation-scale-y" data-aos-delay="200">I don’t just sell
+              websites, I create websites that SELL.</h5>
             <div class="achievement__number number" data-aos><span>3</span><span>2</span></div>
             <div class="achievement__info h6" data-aos="animation-scale-y" data-aos-delay="600">
               <span>😎</span>Successful Projects
@@ -481,7 +521,8 @@
           <div class="talent__wrap">
             <div class="talent__stage stage" data-aos="animation-translate-right"><span class="stage__number">05.</span>
               Freelancing Area</div>
-            <h2 class="talent__title h2" data-aos="animation-scale-y" data-aos-offset="200">Notion Template for Freelancers</h2>
+            <h2 class="talent__title h2" data-aos="animation-scale-y" data-aos-offset="200">Notion Template for
+              Freelancers</h2>
             <div class="talent__btn" data-aos="animation-scale-y" data-aos-offset="400">
               <a href="https://everlasting-profit-030.notion.site/Freelancing-Area-818833919f5b4a01abf7affd5b31c0d4">
                 <button class="btn btn_white">Download Now</button>
@@ -502,7 +543,8 @@
             <div class="stage__logo"><img class="stage__pic" src="img/logo-sm.png" alt=""></div>
           </div>
           <h2 class="jobs__title title title_big" data-aos="animation-scale-y" data-aos-offset="200">Join Us</h2>
-          <div class="jobs__info" data-aos="animation-scale-y" data-aos-offset="300">If you’re good at what you do, you can work anywhere. If you’re the best at what you do, come work at Wizard Counsel.</div><a
+          <div class="jobs__info" data-aos="animation-scale-y" data-aos-offset="300">If you’re good at what you do, you
+            can work anywhere. If you’re the best at what you do, come work at Wizard Counsel.</div><a
             class="jobs__scroll js-scroll" data-aos="animation-scale-y" href="https://wizard.rotaractclubofcvs.in/">
             <div class="jobs__icon">
               <div class="jobs__arrows"><img class="jobs__pic" src="img/arrow-right.svg" alt=""><img class="jobs__pic"
@@ -511,7 +553,8 @@
             <div class="jobs__text">Available <br>Internships</div>
           </a>
         </div>
-        <div class="jobs__list"><a class="jobs__item" href="https://wizard.rotaractclubofcvs.in/" data-aos="animation-scale-y">
+        <div class="jobs__list"><a class="jobs__item" href="https://wizard.rotaractclubofcvs.in/"
+            data-aos="animation-scale-y">
             <div class="jobs__inner">
               <h5 class="jobs__vacancy h5">Graphic Designer<div class="jobs__counter">2</div>
               </h5>
@@ -563,7 +606,8 @@
             <div class="about__logo" data-aos="animation-scale-y"><img class="about__pic" src="img/logo-sm-pink.png"
                 alt="" /></div>
             <div class="about__hello" data-aos="animation-scale-y" data-aos-offset="200"><span>👋</span> Say hello</div>
-            <h5 class="about__info h5" data-aos="animation-scale-y" data-aos-offset="400">Let me impress you with the best possible experience for the lowest possible price. </h5>
+            <h5 class="about__info h5" data-aos="animation-scale-y" data-aos-offset="400">Let me impress you with the
+              best possible experience for the lowest possible price. </h5>
           </div>
           <div class="about__row">
             <div class="about__col">
@@ -579,7 +623,8 @@
                 <div class="about__icon" data-aos="animation-scale-y"><img class="about__pic" src="img/talk.png"
                     alt="" /></div>
                 <div class="about__line" data-aos="animation-scale-y" data-aos-offset="200">
-                  <div class="about__text h5">Invest in your designs today!</div><a class="about__arrow arrow" href="mailto:prembhatt@zohomail.in">
+                  <div class="about__text h5">Invest in your designs today!</div><a class="about__arrow arrow"
+                    href="mailto:prembhatt@zohomail.in">
                     <div class="arrow__line"><svg class="icon icon-arrow-next">
                         <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
                       </svg><svg class="icon icon-arrow-next">
@@ -603,7 +648,8 @@
       <div class="footer__center center">
         <div class="footer__body"><a class="footer__logo" href="index.html"><img class="footer__pic" src="img/bhatt.png"
               alt=""></a>
-          <div class="footer__text">I have a vast experience in designing easy-to-navigate, aesthetically pleasing, trendy, cost-effective, functional and successful websites that both humans and search engines love!</div>
+          <div class="footer__text">I have a vast experience in designing easy-to-navigate, aesthetically pleasing,
+            trendy, cost-effective, functional and successful websites that both humans and search engines love!</div>
         </div>
         <div class="footer__bottom">
           <div class="footer__copyright">© 2021, Prem Bhatt</div>
@@ -632,10 +678,6 @@
     </footer>
   </div>
 
-
-
- 
-  
   <script src="js/app.js"></script>
   <script src="js/common.js"></script>
 </body>
