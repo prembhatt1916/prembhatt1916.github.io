@@ -567,14 +567,18 @@
           <div class="about__row">
             <div class="about__col">
               <h2 class="about__title h2" data-aos="animation-scale-y">Let’s talk about your next project</h2>
-              <div class="about__btn"><button class="btn btn_white">Contact Us</button></div>
+              <div class="about__btn">
+                <a href="mailto:prembhatt@zohomail.in">
+                  <button class="btn btn_white">Contact Me</button>
+                </a>
+              </div>
             </div>
             <div class="about__col">
               <div class="about__box">
                 <div class="about__icon" data-aos="animation-scale-y"><img class="about__pic" src="img/talk.png"
                     alt="" /></div>
                 <div class="about__line" data-aos="animation-scale-y" data-aos-offset="200">
-                  <div class="about__text h5">Invest in your designs today!</div><a class="about__arrow arrow" href="#">
+                  <div class="about__text h5">Invest in your designs today!</div><a class="about__arrow arrow" href="mailto:prembhatt@zohomail.in">
                     <div class="arrow__line"><svg class="icon icon-arrow-next">
                         <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
                       </svg><svg class="icon icon-arrow-next">
@@ -626,6 +630,34 @@
         </svg></div>
     </footer>
   </div>
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat Plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "112225937917934");
+    chatbox.setAttribute("attribution", "biz_inbox");
+
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v12.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  
   <script src="js/app.js"></script>
   <script src="js/common.js"></script>
 </body>
