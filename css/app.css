@@ -1739,7 +1739,7 @@ select {
 }
 
 .h6 {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.33333;
   letter-spacing: -.2px;
 }
@@ -4195,7 +4195,7 @@ select {
 }
 
 .overview__info {
-  max-width: 370px;
+  max-width: 569px;
   margin-bottom: 79px;
 }
 
