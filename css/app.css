@@ -1739,7 +1739,7 @@ select {
 }
 
 .h6 {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.33333;
   letter-spacing: -.2px;
 }
@@ -2279,7 +2279,7 @@ select {
 .number {
   position: relative;
   display: inline-block;
-  font-size: 174px;
+  font-size: 200px;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -4041,7 +4041,7 @@ select {
 
 .case {
   position: relative;
-  padding: 222px 0 99px;
+  padding: 5px 0 99px;
 }
 
 .case__wrap {
@@ -4195,7 +4195,7 @@ select {
 }
 
 .overview__info {
-  max-width: 569px;
+  max-width:700px;
   margin-bottom: 79px;
 }
 
@@ -4546,6 +4546,12 @@ select {
   width: 100%;
 }
 
+@media only screen and (max-width: 767px) {
+  .quality__preview .quality__pic {
+    width: 489px;
+    margin-left: 38px ;
+  }
+}
 .quality .line {
   top: -138px;
   left: 50px;
@@ -5552,7 +5558,7 @@ select {
     width: 68px;
   }
   .advantages .line {
-    top: -50px;
+    top: -102px;
     left: 0;
   }
   .cases {
@@ -5810,7 +5816,7 @@ select {
     padding: 0 32px;
   }
   .h2 {
-    font-size: 34px;
+    font-size: 40px;
     line-height: 1.2;
   }
   .h4 {
@@ -6310,7 +6316,9 @@ select {
     left: -200px;
   }
   .case {
-    padding: 118px 0 420px;
+    padding-bottom: 0px;
+    padding-top: 126px;
+
   }
   .case__wrap {
     max-width: 100%;
@@ -6492,3 +6500,4 @@ select {
   }
 }
 
+/*# sourceMappingURL=app.css.map */

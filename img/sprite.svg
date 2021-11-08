@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg">
-<symbol id="icon-arrow-next" viewBox="0 0 22 16">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-arrow-next" viewBox="0 0 22 16">
     <path d="M13.293 15.707a1 1 0 0 1-.083-1.32l.083-.094L18.585 9H1a1 1 0 0 1-.117-1.993L1 7h17.585l-5.292-5.293a1 1 0 0 1-.083-1.32l.083-.094a1 1 0 0 1 1.32-.083l.094.083 7 7 .073.082.007.008-.08-.09A1.008 1.008 0 0 1 22 7.98v.037c0 .024-.002.048-.004.071L22 8a1.008 1.008 0 0 1-.21.613 1.037 1.037 0 0 1-.083.094l-7 7a1 1 0 0 1-1.414 0z"/>
 </symbol><symbol id="icon-arrow-prev" viewBox="0 0 22 16">
     <path d="M8.707.293a1 1 0 0 1 .083 1.32l-.083.094L3.415 7H21a1 1 0 0 1 .117 1.993L21 9H3.415l5.292 5.293a1 1 0 0 1 .083 1.32l-.083.094a1 1 0 0 1-1.32.083l-.094-.083-7-7-.073-.082a1.005 1.005 0 0 1-.007-.008l.08.09A1.008 1.008 0 0 1 0 8.02v-.037c0-.024.002-.048.004-.071L0 8a1.008 1.008 0 0 1 .21-.613c.028-.035.054-.066.083-.094l7-7a1 1 0 0 1 1.414 0z"/>
