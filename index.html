@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prem Bhatt - Freelancer Web Developer</title>
-    <link rel="shortcut icon" href="img/logo-sm.png" type="image/x-icon">
-    <!--CSS-->
+    <meta charset="utf-8">
+    <title>Prem Bhatt</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="img/favicon_16.png" type="image/x-icon">
+
     <link rel="stylesheet" media="all" href="css/app.css">
     <script>
         var viewportmeta = document.querySelector('meta[name="viewport"]');
@@ -20,56 +21,60 @@
                 viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
             }
         }
+
     </script>
 </head>
 
 <body>
-    <!--------Messenger Chatbot Integration ------------>
-    <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "112225937917934");
-        chatbox.setAttribute("attribution", "biz_inbox");
-
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v12.0'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!--------Messenger Chatbot Integration ------------>
-
-    <!--------Default Page Setting Start------------>
     <div class="page">
-        <!---------Main Section Start--------------------->
         <div class="main">
-            <!---------Header Section Start--------------------->
             <div class="header js-header">
                 <div class="header__center center">
                     <a class="header__logo js-header-logo" href="index.html">
-                        <img class="header__pic" src="img/bhatt.webp" alt="Prem Bhatt" />
+                        <img class="header__pic header__pic_black" src="img/logo_dark.svg" alt="Prem Bhatt" />
+                        <img class="header__pic header__pic_white" src="img/logo_light.svg" alt="Prem Bhatt" />
                     </a>
-                    <a href="#contact">
-                        <button class="header__btn btn btn_dark">Reach Out</button>
+                    <div class="header__wrap js-header-wrap">
+                        <nav class="header__nav">
+                            <a class="header__item active" href="index.html">Home</a>
+                            <a class="header__item js-scroll" href="#about_me">About</a>
+                            <a class="header__item js-scroll" href="#work">Work</a>
+                            <a class="header__item js-scroll" href="freebie.html">Freebie
+                                <div class="header__counter">1</div>
+                            </a>
+                        </nav>
+                        <div class="header__social">
+                            <a class="header__link" href="https://www.facebook.com/Prem-Bhatt-112225937917934">
+                                <svg class="icon icon-facebook">
+                                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="header__link" href="https://www.linkedin.com/in/prembhatt1916/">
+                                <svg class="icon icon-instagram">
+                                    <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                            <a class="header__link" href="https://www.instagram.com/marketingwithprem/">
+                                <svg class="icon icon-instagram">
+                                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="line">
+                            <svg class="line__svg" xmlns="http://www.w3.org/2000/svg" width="542" height="820">
+                                <path fill="none" stroke="#323259" stroke-width="2"
+                                    d="M67.002 1c-9.846 2.322-18.256 5.77-25.23 10.347C14.268 29.392 1 59 1 80.242c0 19.465 4.22 33.53 10.7 44.064 8.173 13.266 21.127 23.34 35.946 31.717S81 167.65 99.544 164.4s35.194-14.103 42.438-25.04c6.803-10.273 9.465-18.356 10.034-26.6.594-8.62.814-19.894-12.9-35.218-3.31-3.697-9.405-8.03-15.145-10.693-2.098-.973-14.094-6.014-27.454-5.476-11.45.46-24.028 5.89-30.787 11.675C50.498 86.087 44.87 111.313 47.656 129c2.55 16.172 13.563 35.116 33.645 48.24 11.517 7.526 26.962 13.923 42.67 16.554 15.095 2.53 36.494 6.735 53.47 12.248 16.285 5.29 28.394 11.897 31.848 13.942 6.62 3.92 11.166 8.683 13.38 10.648 4.286 3.803 19.582 21.91 25.16 36.19 9.54 24.417 8.908 49.09 8.256 54.772-1.8 15.703-7 27.963-12.697 37.603-9.28 15.704-21.97 24.68-33.526 28.574-10.768 3.63-20.613 2.77-24.24.96-5.258-2.624-13.262-6.02-18.323-15.728-.928-1.78-2.566-4.622-3.738-9.447-.664-2.732-1.82-19.51 3.738-34.634 2.365-6.435 7.644-21.235 18.323-34.158 14.42-17.453 35.752-33.512 45.406-39.992 16.803-11.278 32.187-19.34 48.6-22.522 3.183-.617 17.907-2.69 31.893-.54 13.195 2.03 25.598 8.157 31.39 11.784 12.017 7.524 21.507 18.63 28.876 37.773 1.484 3.855 2.396 10.446 2.868 15.367.5 5.11.503 8.59 0 14.718-1.117 13.603-4.78 29.58-14.285 47.846-3.29 6.323-8.076 14.9-16.05 25.698-4.696 6.36-13.85 17.642-27.464 33.846l-42.38 50.89c-16.087 20.25-28.28 36.992-36.11 52.17-5.392 10.447-15.198 27.915-20.753 48.628-1.272 4.743-5.466 30.186-2.688 54.394 2.714 23.655 12.28 45.97 21.036 60.27 19.17 31.318 50.474 51.02 59.716 55.687 19.282 9.734 45.952 18.277 76.11 25.364C399.75 772.703 430.5 777.88 466 785.023l175.725 33.055">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <a class="js-scroll" href="#contact_me">
+                        <button class="header__btn btn btn_dark">Contact Me</button>
                     </a>
+                    <button class="header__burger js-header-burger"></button>
                 </div>
+                <div class="header__bg js-header-bg"></div>
             </div>
-            <!---Hero Section Start -->
             <div class="main__center center">
                 <div class="main__wrap">
                     <h1 class="main__title title" data-aos>
@@ -81,30 +86,46 @@
                         hybrid profile,
                         I connect Design, Development and Technology to propel projects to their greatest potential.
                     </div>
-                    <div class="main__btn" data-aos="animation-translate-up" data-aos-delay="400"><a
-                            class="btn btn_primary js-scroll" href="#projects">Recent Work</a></div><a
-                        class="main__scroll js-scroll" href="#details" data-aos="animation-translate-up">
+                    <div class="main__btn" data-aos="animation-translate-up" data-aos-delay="400">
+                        <a class="js-scroll" href="#work">
+                            <button class="btn btn_primary ">Recent Work</button>
+                        </a>
+                    </div>
+                    <a class="main__scroll js-scroll" href="#details" data-aos="animation-translate-up">
                         <div class="main__icon">
-                            <div class="main__arrows"><img class="main__pic" src="img/arrow-down.svg" alt=""><img
-                                    class="main__pic" src="img/arrow-down.svg" alt=""></div>
+                            <div class="main__arrows">
+                                <img class="main__pic" src="img/arrow-down.svg" alt="">
+                                <img class="main__pic" src="img/arrow-down.svg" alt="">
+                            </div>
                         </div>
                         <div class="main__text">Scroll down</div>
                     </a>
                 </div>
                 <div class="main__bg" data-aos>
-                    <div class="main__preview"><img class="main__pic" src="img/main-pic-1.webp" alt=""></div>
-                    <div class="main__preview"><img class="main__pic" src="img/main-pic-2.webp" alt=""></div>
-                    <div class="main__preview"><img class="main__pic js-parallax" data-scale="1.6" data-orientation="up"
-                            src="img/main-pic-3.webp" alt=""></div>
-                    <div class="main__preview"><img class="main__pic js-parallax" data-scale="1.3"
-                            data-orientation="down" src="img/main-pic-4.webp" alt=""></div>
-                    <div class="main__preview"><img class="main__pic js-parallax" data-scale="1.2"
-                            data-orientation="right" src="img/main-pic-5.svg" alt=""></div>
-                    <div class="main__preview"><img class="main__pic js-parallax" data-scale="1.5"
-                            data-orientation="down" src="img/main-pic-6.webp" alt=""></div>
+                    <div class="main__preview">
+                        <img class="main__pic" src="img/main-pic-1.webp" alt="">
+                    </div>
+                    <div class="main__preview">
+                        <img class="main__pic" src="img/main-pic-2.webp" alt="">
+                    </div>
+                    <div class="main__preview">
+                        <img class="main__pic js-parallax" data-scale="1.6" data-orientation="up"
+                            src="img/main-pic-3.webp" alt="">
+                    </div>
+                    <div class="main__preview">
+                        <img class="main__pic js-parallax" data-scale="1.3" data-orientation="down"
+                            src="img/main-pic-4.webp" alt="">
+                    </div>
+                    <div class="main__preview">
+                        <img class="main__pic js-parallax" data-scale="1.2" data-orientation="right"
+                            src="img/main-pic-5.svg" alt="">
+                    </div>
+                    <div class="main__preview">
+                        <img class="main__pic js-parallax" data-scale="1.5" data-orientation="down"
+                            src="img/main-pic-6.webp" alt="">
+                    </div>
                 </div>
             </div>
-            <!---SVG LINE-->
             <div class="line">
                 <svg class="line__svg" xmlns="http://www.w3.org/2000/svg" width="642" height="820">
                     <path class="path" fill="none" stroke="#d1ecfd" stroke-width="2"
@@ -113,24 +134,22 @@
                 </svg>
             </div>
         </div>
-        <!------------------------About Section Start------------------------>
-        <div class="details js-details">
-            <div class="details__anchor anchor" id="details"></div>
+        <div class="details js-details" id="about_me">
             <div class="bg">
-                <div class="bg__preview"><img class="bg__pic js-parallax" data-scale="1.3" data-orientation="left"
-                        src="img/bg.svg" alt="Prem Bhatt">
+                <div class="bg__preview">
+                    <img class="bg__pic js-parallax" data-scale="1.3" data-orientation="left" src="img/bg.svg" alt="">
                 </div>
             </div>
             <div class="details__center center">
                 <div class="details__head head">
                     <div class="head__box">
                         <div class="head__stage stage" data-aos="animation-translate-right">
-                            <span class="stage__number">01.</span>
-                            Who Am I<div class="stage__logo"><img class="stage__pic" src="img/logo-sm.webp" alt="">
+                            <span class="stage__number">01.</span>Who I Am<div class="stage__logo">
+
                             </div>
                         </div>
-                        <h2 class="head__title h2" data-aos="animation-scale-y" data-aos-delay="200">A Full Stack
-                            Developer with
+                        <h2 class="head__title h2" data-aos="animation-scale-y" data-aos-delay="200">A Full
+                            Stack Developer with
                             Marketing background</h2>
                     </div>
                     <div class="head__arrows arrows arrows_white" data-aos="animation-scale-y" data-aos-delay="400">
@@ -148,11 +167,13 @@
                     <select class="head__select js-details-select">
                         <option>2019</option>
                         <option>2020</option>
-                        <option selected>2021</option>
+                        <option>2021</option>
+                        <option selected>Now</option>
+                        <option>2022</option>
                     </select>
                 </div>
                 <div class="details__body">
-                    <div class="details__years aos-init aos-animate" data-aos="animation-translate-right">
+                    <div class="details__years" data-aos="animation-translate-right">
                         <div class="details__year js-details-year">2019<div class="details__line">
                                 <div class="details__dot"></div>
                             </div>
@@ -161,7 +182,15 @@
                                 <div class="details__dot"></div>
                             </div>
                         </div>
-                        <div class="details__year js-details-year active">2021<div class="details__line">
+                        <div class="details__year js-details-year">2021<div class="details__line">
+                                <div class="details__dot"></div>
+                            </div>
+                        </div>
+                        <div class="details__year js-details-year active">😎<div class="details__line">
+                                <div class="details__dot"></div>
+                            </div>
+                        </div>
+                        <div class="details__year js-details-year">2022<div class="details__line">
                                 <div class="details__dot"></div>
                             </div>
                         </div>
@@ -169,15 +198,16 @@
                     <div class="details__container" data-aos="animation-translate-up">
                         <div class="details__inner">
                             <div class="details__slider js-details-slider">
-                                <a class="details__preview" href="/">
-                                    <img class="details__pic" src="img/Journey_3.webp" alt="">
-                                </a>
-                                <a class="details__preview" href="/">
-                                    <img class="details__pic" src="img/journey_2.webp" alt="">
-                                </a>
-                                <a class="details__preview" href="/">
-                                    <img class="details__pic" src="img/journey_1.webp" alt="">
-                                </a>
+                                <div class="details__preview"><img class="details__pic" src="img/ab_2k19.webp" alt="">
+                                </div>
+                                <div class="details__preview"><img class="details__pic" src="img/ab_2k20.webp" alt="">
+                                </div>
+                                <div class="details__preview"><img class="details__pic" src="img/ab_2k21.webp" alt="">
+                                </div>
+                                <div class="details__preview"><img class="details__pic" src="img/now.webp" alt="">
+                                </div>
+                                <div class="details__preview"><img class="details__pic" src="img/ab_2k22.webp" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -187,31 +217,42 @@
                         <h5 class="details__info h5" data-aos="animation-scale-y">Constantly moving ready to experiment
                             new things
                         </h5>
-                        <div class="details__text" data-aos="animation-scale-y" data-aos-delay="200">My Name is Prem
-                            Bhatt. & I'm a 21 Years Old Full Stack Developer and Digital Marketing Enthusiast based in
-                            India but
-                            Working worldwide. I have the mind of a developer, the heart of a marketer and the eyes of a
-                            designer. My biggest strength is my
-                            combined IT & Marketing skills.
+                        <div class="details__text" data-aos="animation-scale-y" data-aos-delay="200"
+                            style="text-align: justify;">
+                            <p>My name is Prem Bhatt, I'm a Digital Marketer & Web developer who codes.I’ve worked
+                                internationally,
+                                in-house, and remotely on projects for leading brands, agencies, startups, and
+                                charities. I care deeply
+                                about creating world-class, useful, and beautiful products that help people and make a
+                                difference. I can
+                                be as involved in your project as you need me to be; from the seed of the idea, to
+                                sketches, creative
+                                direction, design, Search Engine Optimization, Social Media Marketing, system design,
+                                and even the
+                                front-end and back-end using MERN Stack . </p>
+                            <p style="padding-top: 20px;"> PS - I agree that I love to work hard, but I am also a social
+                                butterfly and
+                                can party all day and night long for two days in a row! I am a great cook too and can
+                                stir up my
+                                favorite thirty-minute Pasta Dish 😋 in under fifteen minutes.</p>
                         </div>
                         <div class="details__btn" data-aos="animation-scale-y" data-aos-delay="400">
-                            <a href="about.html">
-                                <button class="btn btn_primary">About Me</button>
+                            <a class="js-scroll" href="#contact_me">
+                                <button class="btn btn_primary">Contact Me</button>
                             </a>
                         </div>
                     </div>
                     <div class="details__counter" data-aos>
                         <div class="details__front"></div>
                         <div class="details__back">
-
-                            <div class="details__number number">YES</div>
-                            <div class="details__category h7">Available for Work 🤩</div>
+                            <div class="details__number number">Yes!</div>
+                            <div class="details__category h6">I'm Available for Work 😅 </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="line" data-aos="animation-line" data-aos-offset="0">
-                <svg class="line__svg" xmlns="http://www.w3.org/2000/svg" width="542" height="820">
+            <div class="line" data-aos="animation-line" data-aos-offset="0"><svg class="line__svg"
+                    xmlns="http://www.w3.org/2000/svg" width="542" height="820">
                     <path fill="none" stroke="#323259" stroke-width="2"
                         d="M67.002 1c-9.846 2.322-18.256 5.77-25.23 10.347C14.268 29.392 1 59 1 80.242c0 19.465 4.22 33.53 10.7 44.064 8.173 13.266 21.127 23.34 35.946 31.717S81 167.65 99.544 164.4s35.194-14.103 42.438-25.04c6.803-10.273 9.465-18.356 10.034-26.6.594-8.62.814-19.894-12.9-35.218-3.31-3.697-9.405-8.03-15.145-10.693-2.098-.973-14.094-6.014-27.454-5.476-11.45.46-24.028 5.89-30.787 11.675C50.498 86.087 44.87 111.313 47.656 129c2.55 16.172 13.563 35.116 33.645 48.24 11.517 7.526 26.962 13.923 42.67 16.554 15.095 2.53 36.494 6.735 53.47 12.248 16.285 5.29 28.394 11.897 31.848 13.942 6.62 3.92 11.166 8.683 13.38 10.648 4.286 3.803 19.582 21.91 25.16 36.19 9.54 24.417 8.908 49.09 8.256 54.772-1.8 15.703-7 27.963-12.697 37.603-9.28 15.704-21.97 24.68-33.526 28.574-10.768 3.63-20.613 2.77-24.24.96-5.258-2.624-13.262-6.02-18.323-15.728-.928-1.78-2.566-4.622-3.738-9.447-.664-2.732-1.82-19.51 3.738-34.634 2.365-6.435 7.644-21.235 18.323-34.158 14.42-17.453 35.752-33.512 45.406-39.992 16.803-11.278 32.187-19.34 48.6-22.522 3.183-.617 17.907-2.69 31.893-.54 13.195 2.03 25.598 8.157 31.39 11.784 12.017 7.524 21.507 18.63 28.876 37.773 1.484 3.855 2.396 10.446 2.868 15.367.5 5.11.503 8.59 0 14.718-1.117 13.603-4.78 29.58-14.285 47.846-3.29 6.323-8.076 14.9-16.05 25.698-4.696 6.36-13.85 17.642-27.464 33.846l-42.38 50.89c-16.087 20.25-28.28 36.992-36.11 52.17-5.392 10.447-15.198 27.915-20.753 48.628-1.272 4.743-5.466 30.186-2.688 54.394 2.714 23.655 12.28 45.97 21.036 60.27 19.17 31.318 50.474 51.02 59.716 55.687 19.282 9.734 45.952 18.277 76.11 25.364C399.75 772.703 430.5 777.88 466 785.023l175.725 33.055">
                     </path>
@@ -235,22 +276,21 @@
                     </svg>
                 </div>
             </div>
-            <!----------------------------------Services Section Start----------------------------------------->
-            <div class="work js-work">
-                <div class="work__anchor anchor" id="work"></div>
+            <div class="work js-work" id="services">
                 <div class="work__center center">
                     <div class="work__head head">
                         <div class="head__box">
                             <div class="head__stage stage">
                                 <span class="stage__line" data-aos="animation-translate-right"><span
-                                        class="stage__number">02.</span> What I Do
-                                </span>
-                                <div class="stage__logo"><img class="stage__pic" src="img/logo-sm.webp" alt=""></div>
+                                        class="stage__number">02.</span> What I
+                                    Do</span>
+                                <div class="stage__logo">
+                                    <img class="stage__pic" src="img/logo-sm.png" alt="">
+                                </div>
                             </div>
                             <h2 class="head__title h2" data-aos="animation-scale-y" data-aos-delay="200">I Make Designs
                                 that Lead and
-                                Inpire.
-                            </h2>
+                                Inpire.</h2>
                         </div>
                         <div class="head__arrows arrows" data-aos="animation-scale-y" data-aos-delay="400">
                             <button class="arrows__prev js-prev">
@@ -258,7 +298,8 @@
                                     <use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
                                 </svg>
                             </button>
-                            <button class="arrows__next js-next"><svg class="icon icon-arrow-next">
+                            <button class="arrows__next js-next">
+                                <svg class="icon icon-arrow-next">
                                     <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
                                 </svg>
                             </button>
@@ -269,23 +310,16 @@
                             <div class="work__slider js-work-slider">
                                 <div class="work__slide">
                                     <div class="work__item">
+                                        <div class="work__preview"><img class="work__pic" src="img/work-pic-1.webp"
+                                                alt=""></div>
+                                        <h6 class="work__category h6">Search Engine Optimization</h6>
+                                    </div>
+                                </div>
+                                <div class="work__slide">
+                                    <div class="work__item">
                                         <div class="work__preview"><img class="work__pic" src="img/work-pic-6.webp"
                                                 alt=""></div>
                                         <h6 class="work__category h6">Web Design</h6>
-                                    </div>
-                                </div>
-                                <div class="work__slide">
-                                    <div class="work__item">
-                                        <div class="work__preview"><img class="work__pic" src="img/work-pic-1.webp"
-                                                alt=""></div>
-                                        <h6 class="work__category h6">SEO</h6>
-                                    </div>
-                                </div>
-                                <div class="work__slide">
-                                    <div class="work__item">
-                                        <div class="work__preview"><img class="work__pic" src="img/work-pic-7.webp"
-                                                alt=""></div>
-                                        <h6 class="work__category h6">SMM</h6>
                                     </div>
                                 </div>
                                 <div class="work__slide">
@@ -297,9 +331,9 @@
                                 </div>
                                 <div class="work__slide">
                                     <div class="work__item">
-                                        <div class="work__preview"><img class="work__pic" src="img/work-pic-5.webp"
+                                        <div class="work__preview"><img class="work__pic" src="img/work-pic-3.webp"
                                                 alt=""></div>
-                                        <h6 class="work__category h6">Email Marketing</h6>
+                                        <h6 class="work__category h6">Web App Development</h6>
                                     </div>
                                 </div>
                                 <div class="work__slide">
@@ -311,9 +345,24 @@
                                 </div>
                                 <div class="work__slide">
                                     <div class="work__item">
-                                        <div class="work__preview"><img class="work__pic" src="img/work-pic-3.webp"
+                                        <div class="work__preview"><img class="work__pic" src="img/work-pic-5.webp"
                                                 alt=""></div>
-                                        <h6 class="work__category h6">Web App Development</h6>
+                                        <h6 class="work__category h6">UI / UX Design</h6>
+                                    </div>
+                                </div>
+
+                                <div class="work__slide">
+                                    <div class="work__item">
+                                        <div class="work__preview"><img class="work__pic" src="img/work-pic-7.webp"
+                                                alt=""></div>
+                                        <h6 class="work__category h6">Email Marketing</h6>
+                                    </div>
+                                </div>
+                                <div class="work__slide">
+                                    <div class="work__item">
+                                        <div class="work__preview"><img class="work__pic" src="img/work-pic-8.webp"
+                                                alt=""></div>
+                                        <h6 class="work__category h6">Social Media Marketing</h6>
                                     </div>
                                 </div>
                             </div>
@@ -321,48 +370,48 @@
                     </div>
                 </div>
             </div>
-            <!-----------------------------------Achievemnet Section Start-------------------------------------------->
             <div class="achievement">
                 <div class="achievement__center center">
                     <div class="achievement__container">
                         <div class="achievement__slider js-achievement-slider">
                             <div class="achievement__slide">
                                 <div class="achievement__group">
-                                    <div class="achievement__preview"><img class="achievement__pic"
-                                            src="img/achievement1.webp" alt="">
+                                    <div class="achievement__preview">
+                                        <img class="achievement__pic" src="img/achievement1.webp" alt="">
                                     </div>
-                                    <div class="achievement__preview"><img class="achievement__pic js-parallax"
-                                            data-scale="1.3" data-orientation="up" src="img/achievement-pic-2.svg"
-                                            alt=""></div>
-                                    <div class="achievement__preview"><img class="achievement__pic js-parallax"
-                                            data-scale="1.4" data-orientation="down" src="img/achievement-pic-3.webp"
-                                            alt="">
+                                    <div class="achievement__preview">
+                                        <img class="achievement__pic js-parallax" data-scale="1.3" data-orientation="up"
+                                            src="img/achievement-pic-2.svg" alt="">
+                                    </div>
+                                    <div class="achievement__preview">
+                                        <img class="achievement__pic js-parallax" data-scale="1.4"
+                                            data-orientation="down" src="" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="achievement__slide">
                                 <div class="achievement__group">
-                                    <div class="achievement__preview"><img class="achievement__pic"
-                                            src="img/achievement2.1.webp" alt="">
+                                    <div class="achievement__preview">
+                                        <img class="achievement__pic" src="img/achievmet.webp" alt="">
                                     </div>
-                                    <div class="achievement__preview"><img class="achievement__pic"
-                                            src="img/achievement-pic-2.svg" alt="">
+                                    <div class="achievement__preview">
+                                        <img class="achievement__pic" src="img/achievement-pic-2.svg" alt="">
                                     </div>
-                                    <div class="achievement__preview"><img class="achievement__pic"
-                                            src="img/achievement-pic-3.webp" alt="">
+                                    <div class="achievement__preview">
+                                        <img class="achievement__pic" src="img/achievement-pic-3.png" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="achievement__slide">
                                 <div class="achievement__group">
-                                    <div class="achievement__preview"><img class="achievement__pic"
-                                            src="img/achievement3.webp" alt="">
+                                    <div class="achievement__preview">
+                                        <img class="achievement__pic" src="img/achievement3.webp" alt="">
                                     </div>
-                                    <div class="achievement__preview"><img class="achievement__pic"
-                                            src="img/achievement-pic-2.svg" alt="">
+                                    <div class="achievement__preview">
+                                        <img class="achievement__pic" src="img/achievement-pic-2.svg" alt="">
                                     </div>
-                                    <div class="achievement__preview"><img class="achievement__pic"
-                                            src="img/achievement-pic-3.webp" alt="">
+                                    <div class="achievement__preview">
+                                        <img class="achievement__pic" src="img/achievement-pic-3.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -372,12 +421,12 @@
                         <div class="achievement__stage stage"><span class="stage__line"
                                 data-aos="animation-translate-right"><span class="stage__number">03.</span>
                                 Achievement</span>
-                            <div class="stage__logo"><img class="stage__pic" src="img/logo-sm.webp" alt=""></div>
+                            <div class="stage__logo"><img class="stage__pic" src="img/logo-sm.png" alt=""></div>
                         </div>
-                        <h5 class="achievement__title h5" data-aos="animation-scale-y" data-aos-delay="200">I don't just
-                            build
-                            websites, I build websites that SELLS</h5>
-                        <div class="achievement__number number" data-aos><span>6</span><span>2</span></div>
+                        <h5 class="achievement__title h5" data-aos="animation-scale-y" data-aos-delay="200">Constantly
+                            moving ready
+                            to <br> Experiment new things !</h5>
+                        <div class="achievement__number number" data-aos><span>6</span><span>3</span></div>
                         <div class="achievement__info h6" data-aos="animation-scale-y" data-aos-delay="600">
                             <span>😎</span>Successful Projects
                         </div>
@@ -385,28 +434,28 @@
                 </div>
             </div>
         </div>
-        <!----------------------------------Project Section Start------------------------------------------->
-        <div class="projects">
-            <div class="projects__anchor anchor" id="projects"></div>
+        <div class="projects" id="work">
             <div class="projects__center center">
                 <div class="projects__head head">
                     <div class="head__box">
                         <div class="head__stage stage"><span class="stage__line"
                                 data-aos="animation-translate-right"><span class="stage__number">04.</span> Famous
                                 Projects</span>
-                            <div class="stage__logo"><img class="stage__pic" src="img/logo-sm.webp" alt=""></div>
+                            <div class="stage__logo"><img class="stage__pic" src="img/logo-sm.png" alt=""></div>
                         </div>
                         <h2 class="head__title title" data-aos="animation-scale-y" data-aos-delay="200">SELECTED WORK!
                         </h2>
-                        <div class="head__text" data-aos="animation-scale-y" data-aos-delay="400">My portfolio covers a
-                            wide angle
+                        <div class="head__text" data-aos="animation-scale-y" data-aos-delay="400"
+                            style="text-align: justify;">My
+                            portfolio covers a wide angle
                             of collaborations with large and small companies. A few examples of my work are below,
                             however many of my
-                            projects are unavailable due to Non Disclosure Agreements (NDAs).</div>
+                            projects are unavailable due to Non Disclosure Agreements (NDAs).
+                        </div>
                     </div>
                     <div class="head__btns" data-aos="animation-scale-y" data-aos-delay="400">
-                        <a href="#contact">
-                            <button class="head__btn btn btn_primary">Contact Us</button>
+                        <a class="js-scroll" href="#contact_me">
+                            <button class="head__btn btn btn_primary">Contact Me</button>
                         </a>
                     </div>
                 </div>
@@ -414,16 +463,17 @@
                     <div class="projects__desc">
                         <div class="projects__category category" data-aos="animation-scale-y">Featured Product</div>
                         <h4 class="projects__info h4" data-aos="animation-scale-y" data-aos-delay="200">Notion Kit :
-                            All-in-one hub
+                            All-in-one Hub
                             for managing your freelance projects</h4>
-                        <div class="projects__text" data-aos="animation-scale-y" data-aos-delay="400">This template will
-                            help you in
+                        <div class="projects__text" data-aos="animation-scale-y" data-aos-delay="400"
+                            style="text-align: justify;">
+                            This template will help you in
                             operating and logging everything at a place. From Discovery Calls to Client and Projects
                             records,
                             everything is here.
                         </div>
                         <a class="projects__arrow arrow" data-aos="animation-scale-y" data-aos-delay="600"
-                            href="https://everlasting-profit-030.notion.site/Freelancing-Area-818833919f5b4a01abf7affd5b31c0d4">
+                            href="freebie.html">
                             <div class="arrow__line">
                                 <svg class="icon icon-arrow-next">
                                     <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
@@ -435,10 +485,47 @@
                         </a>
                     </div>
                     <div class="projects__preview">
-                        <a class="projects__view"
-                            href="https://everlasting-profit-030.notion.site/Freelancing-Area-818833919f5b4a01abf7affd5b31c0d4">view</a><a
-                            class="projects__arrow arrow"
-                            href="https://everlasting-profit-030.notion.site/Freelancing-Area-818833919f5b4a01abf7affd5b31c0d4">
+                        <a class="projects__view" href="freebie.html">view</a>
+                        <a class="projects__arrow arrow" href="freebie.html">
+                            <div class="arrow__line">
+                                <svg class="icon icon-arrow-next">
+                                    <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+                                </svg>
+                                <svg class="icon icon-arrow-next">
+                                    <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="projects__img">
+                            <img class="projects__pic js-parallax" data-scale="1.3" data-orientation="up"
+                                src="img/projects-pic-1.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__list">
+                    <div class="projects__item">
+                        <h4 class="projects__info h4" data-aos="animation-scale-y">Wizard Counsel</h4>
+                        <div class="projects__preview">
+                            <div class="projects__img" ">
+                                <img class=" projects__pic js-parallax" data-scale="1.3" data-orientation="right"
+                                src="img/projects-pic-2.webp" alt="">
+                            </div>
+                            <a class="projects__arrow arrow" href="#">
+                                <div class="arrow__line">
+                                    <svg class="icon icon-arrow-next">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+                                    </svg>
+                                    <svg class="icon icon-arrow-next">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="projects__text" data-aos="animation-scale-y" data-aos-offset="200">Wizard Counsel is
+                            a flagship project of Rotaract Club of CVS, It reforms in the lives of people through its
+                            various innovative ideas and startups.
+                        </div>
+                        <a class="projects__arrow arrow" data-aos="animation-scale-y" data-aos-delay="400" href="#">
                             <div class="arrow__line">
                                 <svg class="icon icon-arrow-next">
                                     <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
@@ -447,108 +534,98 @@
                                 </svg>
                             </div>
                         </a>
-                        <div class="projects__img"><img class="projects__pic js-parallax" data-scale="1.3"
-                                data-orientation="up" src="img/projects-pic-1.webp" alt=""></div>
-                    </div>
-                </div>
-                <div class="projects__list">
-                    <div class="projects__item">
-                        <h4 class="projects__info h4" data-aos="animation-scale-y">Bento Vol. 2</h4>
-                        <div class="projects__preview">
-                            <div class="projects__img"><img class="projects__pic js-parallax" data-scale="1.3"
-                                    data-orientation="right" src="img/projects-pic-2.webp" alt=""></div><a
-                                class="projects__arrow arrow" href="/">
-                                <div class="arrow__line"><svg class="icon icon-arrow-next">
-                                        <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                                    </svg><svg class="icon icon-arrow-next">
-                                        <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                                    </svg></div>
-                            </a>
-                        </div>
-                        <div class="projects__text" data-aos="animation-scale-y" data-aos-offset="200">Agency is a
-                            full-service
-                            agency, busy designing and building beautiful digital products, brands and experiences.
-                        </div><a class="projects__arrow arrow" data-aos="animation-scale-y" data-aos-delay="400"
-                            href="/">
-                            <div class="arrow__line"><svg class="icon icon-arrow-next">
-                                    <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                                </svg><svg class="icon icon-arrow-next">
-                                    <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                                </svg></div>
-                        </a>
                     </div>
                     <div class="projects__item">
                         <h4 class="projects__info h4" data-aos="animation-scale-y">Bento 3D Illustration</h4>
                         <div class="projects__preview">
-                            <div class="projects__img"><img class="projects__pic js-parallax" data-scale="1.3"
-                                    data-orientation="up" src="img/projects-pic-3.webp" alt=""></div><a
-                                class="projects__arrow arrow" href="/">
-                                <div class="arrow__line"><svg class="icon icon-arrow-next">
+                            <div class="projects__img">
+                                <img class="projects__pic js-parallax" data-scale="1.3" data-orientation="up"
+                                    src="img/projects-pic-3.webp" alt="">
+                            </div>
+                            <a class="projects__arrow arrow" href="#">
+                                <div class="arrow__line">
+                                    <svg class="icon icon-arrow-next">
                                         <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
                                     </svg><svg class="icon icon-arrow-next">
                                         <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                             </a>
                         </div>
                         <div class="projects__text" data-aos="animation-scale-y" data-aos-offset="200">Agency is a
                             full-service
                             agency, busy designing and building beautiful digital products, brands, and experiences.
-                        </div><a class="projects__arrow arrow" data-aos="animation-scale-y" data-aos-delay="400"
-                            href="/">
-                            <div class="arrow__line"><svg class="icon icon-arrow-next">
+                        </div>
+                        <a class="projects__arrow arrow" data-aos="animation-scale-y" data-aos-delay="400" href="#">
+                            <div class="arrow__line">
+                                <svg class="icon icon-arrow-next">
                                     <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                                </svg><svg class="icon icon-arrow-next">
+                                </svg>
+                                <svg class="icon icon-arrow-next">
                                     <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                                </svg></div>
+                                </svg>
+                            </div>
                         </a>
                     </div>
                     <div class="projects__item">
                         <h4 class="projects__info h4" data-aos="animation-scale-y">Bento Vol. 3</h4>
                         <div class="projects__preview">
-                            <div class="projects__img"><img class="projects__pic js-parallax" data-scale="1.2"
-                                    data-orientation="down" src="img/projects-pic-4.webp" alt=""></div><a
-                                class="projects__arrow arrow" href="/">
-                                <div class="arrow__line"><svg class="icon icon-arrow-next">
+                            <div class="projects__img">
+                                <img class="projects__pic js-parallax" data-scale="1.2" data-orientation="down"
+                                    src="img/projects-pic-4.webp" alt="">
+                            </div>
+                            <a class="projects__arrow arrow" href="#">
+                                <div class="arrow__line">
+                                    <svg class="icon icon-arrow-next">
                                         <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                                    </svg><svg class="icon icon-arrow-next">
+                                    </svg>
+                                    <svg class="icon icon-arrow-next">
                                         <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                             </a>
                         </div>
                         <div class="projects__text" data-aos="animation-scale-y" data-aos-offset="200">Agency is a
                             full-service
                             agency, busy designing and building beautiful digital products, brands, and experiences.
-                        </div><a class="projects__arrow arrow" data-aos="animation-scale-y" data-aos-delay="400"
-                            href="/">
-                            <div class="arrow__line"><svg class="icon icon-arrow-next">
+                        </div>
+                        <a class="projects__arrow arrow" data-aos="animation-scale-y" data-aos-delay="400" href="#">
+                            <div class="arrow__line">
+                                <svg class="icon icon-arrow-next">
                                     <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
                                 </svg><svg class="icon icon-arrow-next">
                                     <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                                </svg></div>
+                                </svg>
+                            </div>
                         </a>
                     </div>
                     <div class="projects__item">
                         <h4 class="projects__info h4" data-aos="animation-scale-y">Sapiens: Man</h4>
                         <div class="projects__preview">
-                            <div class="projects__img"><img class="projects__pic js-parallax" data-scale="1.4"
-                                    data-orientation="up" src="img/projects-pic-5.webp" alt=""></div><a
-                                class="projects__arrow arrow" href="/">
-                                <div class="arrow__line"><svg class="icon icon-arrow-next">
+                            <div class="projects__img">
+                                <img class="projects__pic js-parallax" data-scale="1.4" data-orientation="up"
+                                    src="img/projects-pic-5.webp" alt="">
+                            </div>
+                            <a class="projects__arrow arrow" href="#">
+                                <div class="arrow__line">
+                                    <svg class="icon icon-arrow-next">
                                         <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
                                     </svg><svg class="icon icon-arrow-next">
                                         <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                             </a>
                         </div>
                         <div class="projects__text" data-aos="animation-scale-y" data-aos-offset="200">Agency is a
                             full-service
                             agency, busy designing and building beautiful digital products, brands, and experiences.
                         </div>
-                        <a class="projects__arrow arrow" data-aos="animation-scale-y" data-aos-delay="400" href="/">
+                        <a class="projects__arrow arrow" data-aos="animation-scale-y" data-aos-delay="400" href="#">
                             <div class="arrow__line">
                                 <svg class="icon icon-arrow-next">
                                     <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                                </svg><svg class="icon icon-arrow-next">
+                                </svg>
+                                <svg class="icon icon-arrow-next">
                                     <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
                                 </svg>
                             </div>
@@ -556,93 +633,102 @@
                     </div>
                 </div>
                 <div class="projects__btn" data-aos="animation-scale-y">
-                    <a href="#contact">
+                    <a href="#contact_me">
                         <button class="btn btn_primary">Contact Us</button>
                     </a>
                 </div>
             </div>
             <div class="lines">
-                <div class="line" data-aos="animation-line" data-aos-offset="0"><svg class="line__svg"
-                        xmlns="http://www.w3.org/2000/svg" width="542" height="820">
+                <div class="line" data-aos="animation-line" data-aos-offset="0">
+                    <svg class="line__svg" xmlns="http://www.w3.org/2000/svg" width="542" height="820">
                         <path fill="none" stroke="#9A97ED" stroke-width="2"
                             d="M67.002 1c-9.846 2.322-18.256 5.77-25.23 10.347C14.268 29.392 1 59 1 80.242c0 19.465 4.22 33.53 10.7 44.064 8.173 13.266 21.127 23.34 35.946 31.717S81 167.65 99.544 164.4s35.194-14.103 42.438-25.04c6.803-10.273 9.465-18.356 10.034-26.6.594-8.62.814-19.894-12.9-35.218-3.31-3.697-9.405-8.03-15.145-10.693-2.098-.973-14.094-6.014-27.454-5.476-11.45.46-24.028 5.89-30.787 11.675C50.498 86.087 44.87 111.313 47.656 129c2.55 16.172 13.563 35.116 33.645 48.24 11.517 7.526 26.962 13.923 42.67 16.554 15.095 2.53 36.494 6.735 53.47 12.248 16.285 5.29 28.394 11.897 31.848 13.942 6.62 3.92 11.166 8.683 13.38 10.648 4.286 3.803 19.582 21.91 25.16 36.19 9.54 24.417 8.908 49.09 8.256 54.772-1.8 15.703-7 27.963-12.697 37.603-9.28 15.704-21.97 24.68-33.526 28.574-10.768 3.63-20.613 2.77-24.24.96-5.258-2.624-13.262-6.02-18.323-15.728-.928-1.78-2.566-4.622-3.738-9.447-.664-2.732-1.82-19.51 3.738-34.634 2.365-6.435 7.644-21.235 18.323-34.158 14.42-17.453 35.752-33.512 45.406-39.992 16.803-11.278 32.187-19.34 48.6-22.522 3.183-.617 17.907-2.69 31.893-.54 13.195 2.03 25.598 8.157 31.39 11.784 12.017 7.524 21.507 18.63 28.876 37.773 1.484 3.855 2.396 10.446 2.868 15.367.5 5.11.503 8.59 0 14.718-1.117 13.603-4.78 29.58-14.285 47.846-3.29 6.323-8.076 14.9-16.05 25.698-4.696 6.36-13.85 17.642-27.464 33.846l-42.38 50.89c-16.087 20.25-28.28 36.992-36.11 52.17-5.392 10.447-15.198 27.915-20.753 48.628-1.272 4.743-5.466 30.186-2.688 54.394 2.714 23.655 12.28 45.97 21.036 60.27 19.17 31.318 50.474 51.02 59.716 55.687 19.282 9.734 45.952 18.277 76.11 25.364C399.75 772.703 430.5 777.88 466 785.023l175.725 33.055">
                         </path>
-                    </svg></div>
-                <div class="line" data-aos="animation-line" data-aos-offset="0"><svg class="line__svg"
-                        xmlns="http://www.w3.org/2000/svg" width="542" height="820">
+                    </svg>
+                </div>
+                <div class="line" data-aos="animation-line" data-aos-offset="0">
+                    <svg class="line__svg" xmlns="http://www.w3.org/2000/svg" width="542" height="820">
                         <path fill="none" stroke="#9A97ED" stroke-width="2"
                             d="M67.002 1c-9.846 2.322-18.256 5.77-25.23 10.347C14.268 29.392 1 59 1 80.242c0 19.465 4.22 33.53 10.7 44.064 8.173 13.266 21.127 23.34 35.946 31.717S81 167.65 99.544 164.4s35.194-14.103 42.438-25.04c6.803-10.273 9.465-18.356 10.034-26.6.594-8.62.814-19.894-12.9-35.218-3.31-3.697-9.405-8.03-15.145-10.693-2.098-.973-14.094-6.014-27.454-5.476-11.45.46-24.028 5.89-30.787 11.675C50.498 86.087 44.87 111.313 47.656 129c2.55 16.172 13.563 35.116 33.645 48.24 11.517 7.526 26.962 13.923 42.67 16.554 15.095 2.53 36.494 6.735 53.47 12.248 16.285 5.29 28.394 11.897 31.848 13.942 6.62 3.92 11.166 8.683 13.38 10.648 4.286 3.803 19.582 21.91 25.16 36.19 9.54 24.417 8.908 49.09 8.256 54.772-1.8 15.703-7 27.963-12.697 37.603-9.28 15.704-21.97 24.68-33.526 28.574-10.768 3.63-20.613 2.77-24.24.96-5.258-2.624-13.262-6.02-18.323-15.728-.928-1.78-2.566-4.622-3.738-9.447-.664-2.732-1.82-19.51 3.738-34.634 2.365-6.435 7.644-21.235 18.323-34.158 14.42-17.453 35.752-33.512 45.406-39.992 16.803-11.278 32.187-19.34 48.6-22.522 3.183-.617 17.907-2.69 31.893-.54 13.195 2.03 25.598 8.157 31.39 11.784 12.017 7.524 21.507 18.63 28.876 37.773 1.484 3.855 2.396 10.446 2.868 15.367.5 5.11.503 8.59 0 14.718-1.117 13.603-4.78 29.58-14.285 47.846-3.29 6.323-8.076 14.9-16.05 25.698-4.696 6.36-13.85 17.642-27.464 33.846l-42.38 50.89c-16.087 20.25-28.28 36.992-36.11 52.17-5.392 10.447-15.198 27.915-20.753 48.628-1.272 4.743-5.466 30.186-2.688 54.394 2.714 23.655 12.28 45.97 21.036 60.27 19.17 31.318 50.474 51.02 59.716 55.687 19.282 9.734 45.952 18.277 76.11 25.364C399.75 772.703 430.5 777.88 466 785.023l175.725 33.055">
                         </path>
-                    </svg></div>
+                    </svg>
+                </div>
             </div>
         </div>
-        <!--------------------------------------Notion Template------------------------------------------->
-        <div class="talent">
+        <div class="talent" id="freebie">
             <div class="talent__center center">
                 <div class="talent__container">
                     <div class="talent__bg" data-aos data-aos-offset="0">
                         <div class="talent__preview"><img class="talent__pic" src="img/talent-pic-1.webp" alt=""></div>
                         <div class="talent__preview"><img class="talent__pic" src="img/talent-pic-2.webp" alt=""></div>
                         <div class="talent__preview"><img class="talent__pic" src="img/talent-pic-3.webp" alt=""></div>
-                        <div class=" talent__preview"><img class="talent__pic" src="img/talent-pic-4.webp" alt="">
-                        </div>
+                        <div class="talent__preview"><img class="talent__pic" src="img/talent-pic-4.webp" alt=""></div>
                         <div class="talent__preview"><img class="talent__pic" src="img/logo-sm-pink.webp" alt=""></div>
                     </div>
                     <div class="talent__wrap">
                         <div class="talent__stage stage" data-aos="animation-translate-right"><span
                                 class="stage__number">05.</span>
                             Freelancing Area</div>
-                        <h2 class="talent__title h2" data-aos="animation-scale-y" data-aos-offset="200">Notion Template
-                            for
-                            Freelancers</h2>
+                        <h2 class="talent__title h2" data-aos="animation-scale-y" data-aos-offset="200">Free Notion
+                            Template for Freelancers
+                        </h2>
                         <div class="talent__btn" data-aos="animation-scale-y" data-aos-offset="400">
                             <a
                                 href="https://everlasting-profit-030.notion.site/Freelancing-Area-818833919f5b4a01abf7affd5b31c0d4">
-                                <button class="btn btn_white">Download Now</button>
+                                <button class="btn btn_white">Clone Now</button>
                             </a>
                         </div>
                     </div>
-                    <div class="talent__figure"><img class="talent__pic js-parallax" data-scale="1.3"
-                            data-orientation="right" src="img/talent-figure.svg" alt=""></div>
+                    <div class="talent__figure">
+                        <img class="talent__pic js-parallax" data-scale="1.3" data-orientation="right"
+                            src="img/talent-figure.svg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <!--------------------------------------Contact Section Start-------------------------------------------->
-        <div class="about" id="contact">
+        <div class="about" id="contact_me">
             <div class="about__center center">
                 <div class="about__container">
                     <div class="about__head">
-                        <div class="about__icon" data-aos="animation-scale-y"><img class="about__pic"
-                                src="img/talk.webp" alt="" />
+                        <div class="about__icon" data-aos="animation-scale-y">
+                            <img class="about__pic" src="img/talk.webp" alt="" />
                         </div>
-                        <div class="about__logo" data-aos="animation-scale-y"><img class="about__pic"
-                                src="img/logo-sm-pink.webp" alt="" /></div>
+                        <div class="about__logo" data-aos="animation-scale-y">
+                            <img class="about__pic" src="img/logo-sm-pink.webp" alt="" />
+                        </div>
                         <div class="about__hello" data-aos="animation-scale-y" data-aos-offset="200"><span>👋</span> Say
                             hello</div>
-                        <h5 class="about__info h5" data-aos="animation-scale-y" data-aos-offset="400">Let me impress you
-                            with the
-                            best possible experience for the lowest possible price. </h5>
+                        <h5 class="about__info h6" data-aos="animation-scale-y" data-aos-offset="400">Please, no never
+                            ending
+                            meetings and lengthy design briefs. Give us a
+                            pretty good idea of what you're aiming for and we can get to work.
+
+                        </h5>
                     </div>
                     <div class="about__row">
                         <div class="about__col">
-                            <h2 class="about__title h2" data-aos="animation-scale-y">Let’s talk about your next project
-                            </h2>
+                            <h2 class="about__title h2" data-aos="animation-scale-y">I’m currently available for
+                                Freelance
+                                projects...! </h2>
                             <div class="about__btn">
-                                <a href="mailto:coffee@prembhatt.me">
+                                <a href="#contact_me">
                                     <button class="btn btn_white">Contact Me</button>
                                 </a>
                             </div>
                         </div>
                         <div class="about__col">
                             <div class="about__box">
-                                <div class="about__icon" data-aos="animation-scale-y"><img class="about__pic"
-                                        src="img/talk.webp" alt="" /></div>
+                                <div class="about__icon" data-aos="animation-scale-y">
+                                    <img class="about__pic" src="img/talk.webp" alt="" />
+                                </div>
                                 <div class="about__line" data-aos="animation-scale-y" data-aos-offset="200">
-                                    <div class="about__text h5">Invest in your designs today!</div><a
-                                        class="about__arrow arrow" href="mailto:coffee@prembhatt.me">
-                                        <div class="arrow__line"><svg class="icon icon-arrow-next">
+                                    <div class="about__text h5">Let’s talk about your <br> next project!</div>
+                                    <a class="about__arrow arrow" href="mailto:coffee@prembhatt.me">
+                                        <div class="arrow__line">
+                                            <svg class="icon icon-arrow-next">
                                                 <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-                                            </svg><svg class="icon icon-arrow-next">
+                                            </svg>
+                                            <svg class="icon icon-arrow-next">
                                                 <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
                                             </svg>
                                         </div>
@@ -661,11 +747,11 @@
                 </div>
             </div>
         </div>
-        <!------------------------------------------Footer Section Start------------------------------------------->
-        <footer class="footer">
+        <footer class="footer" id="#reach_out">
             <div class="footer__center center">
                 <div class="footer__body">
-                    <a class="footer__logo" href="index.html"><img class="footer__pic" src="img/bhatt.webp" alt="">
+                    <a class="footer__logo" href="index.html">
+                        <img class="footer__pic" src="img/logo_dark.svg" alt="Prem Bhatt">
                     </a>
                     <div class="footer__text">I've a vast experience in designing easy-to-navigate, aesthetically
                         pleasing,
@@ -673,23 +759,23 @@
                     </div>
                 </div>
                 <div class="footer__bottom">
-                    <div class="footer__copyright">© 2021, Prem Bhatt</div>
+                    <div class="footer__copyright">© 2021, Prem Bhatt.</div>
                     <div class="footer__social">
-                        <div class="footer__text">Follow us</div>
+                        <div class="footer__text">Follow Me</div>
                         <div class="footer__list">
                             <a class="footer__link" href="https://www.facebook.com/Prem-Bhatt-112225937917934">
                                 <svg class="icon icon-facebook">
                                     <use xlink:href="img/sprite.svg#icon-facebook"></use>
                                 </svg>
                             </a>
+                            <a class="footer__link" href="https://www.linkedin.com/in/prembhatt1916/">
+                                <svg class="icon icon-facebook">
+                                    <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                             <a class="footer__link" href="https://www.instagram.com/marketingwithprem/">
                                 <svg class="icon icon-instagram">
                                     <use xlink:href="img/sprite.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                            <a class="footer__link" href="https://www.linkedin.com/in/prembhatt1916/">
-                                <svg class="icon icon-linkedin">
-                                    <use xlink:href="img/sprite.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
                         </div>
@@ -704,16 +790,9 @@
                 </svg>
             </div>
         </footer>
-
     </div>
-    <!--------Default Page Setting End  ------------>
-
-    <!--JavaScripts-->
     <script src="js/app.js"></script>
     <script src="js/common.js"></script>
-
-
-
 </body>
 
 </html>

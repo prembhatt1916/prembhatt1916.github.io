@@ -2281,7 +2281,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             i.removeChild(h);var l = k.split("#"),
                 q = l.shift(),
                 r = l.join("#");if (q.length) {
-              var s = m[q];s || (s = m[q] = new XMLHttpRequest(), s.open("GET.html", q), s.send(), s._embeds = []), s._embeds.push({ parent: i, svg: j, id: r }), b(s);
+              var s = m[q];s || (s = m[q] = new XMLHttpRequest(), s.open("GET", q), s.send(), s._embeds = []), s._embeds.push({ parent: i, svg: j, id: r }), b(s);
             } else a(i, j, document.getElementById(r));
           } else ++c, ++p;
         } else ++c;
