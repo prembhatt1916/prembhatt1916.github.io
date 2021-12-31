@@ -6168,7 +6168,14 @@ select {
     width: 100%;
     max-width: 100%;
   }
-
+  .details__pic {
+    width: 350px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  
   .details__foot {
     display: block;
     padding: 0;
@@ -6258,6 +6265,7 @@ select {
   }
   .achievement__title {
     margin-bottom: 32px;
+    font-size: 18px;
   }
   .slick-dots li:not(:last-child) {
     margin-right: 12px;
@@ -6483,7 +6491,7 @@ select {
     margin-bottom: 40px;
   }
   .about__info {
-    font-size: 18px;
+    font-size: 11px;
     line-height: 1.33333;
   }
   .about__row {
@@ -6500,7 +6508,7 @@ select {
     max-width: 100%;
     margin: 0 0 40px;
     text-align: center;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 1.25;
   }
   .about__btn {
