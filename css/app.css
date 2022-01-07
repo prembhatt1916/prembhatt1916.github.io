@@ -3292,7 +3292,7 @@ select {
 .projects {
   position: relative;
   margin-bottom: 128px;
-  background: url("../img/bg-projects.png") no-repeat 100% 192px/670px auto;
+  background: url("../img/bg-projects.webp") no-repeat 100% 192px/670px auto;
 }
 
 .projects__head {
